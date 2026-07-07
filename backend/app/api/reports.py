@@ -3,13 +3,10 @@ from fastapi import Depends
 from sqlalchemy.orm import Session
 
 from app.database.database import get_db
-
 from app.models.report import Report
-
 from app.services.report_service import ReportService
 
 router = APIRouter()
-
 
 @router.post("/generate")
 def generate_report(
@@ -18,7 +15,7 @@ def generate_report(
 
     business_id = 1
 
-    report = ReportService(db).generate(
+    report = ReportService(db).executive(
         business_id
     )
 

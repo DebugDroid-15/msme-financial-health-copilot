@@ -39,7 +39,7 @@ export default function ReportsLibrary() {
           Reports Library
         </h2>
 
-        <button className="rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white">
+        <button className="rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-500 transition">
           Generate All
         </button>
 
@@ -87,7 +87,7 @@ export default function ReportsLibrary() {
 
               <div className="mt-8 flex gap-3">
 
-                <button className="flex items-center gap-2 rounded-xl border border-slate-300 px-5 py-3">
+                <button className="flex items-center gap-2 rounded-xl border border-slate-300 px-5 py-3 hover:bg-slate-50 dark:hover:bg-slate-800 transition">
 
                   <Eye size={18} />
 
@@ -95,7 +95,7 @@ export default function ReportsLibrary() {
 
                 </button>
 
-                <button className="flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-white">
+                <button className="flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-white hover:bg-emerald-500 transition">
 
                   <Download size={18} />
 
