@@ -209,9 +209,10 @@ styles/
 
 | Name | Role |
 |------|------|
-| Member 1 | Full Stack Development |
-| Member 2 | Frontend & UI/UX |
-| Member 3 | Backend & AI |
+| Amar Khera | Full Stack Development |
+| Ananya Rout | Documentation Engineer |
+| Lucky Kumar | Data Designer |
+| Omm Prakash Sahoo | AI/ML Designer |
 
 ---
 
@@ -220,7 +221,7 @@ styles/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/msme-financial-health-copilot.git
+git clone https://github.com/DebugDroid-15/msme-financial-health-copilot.git
 ```
 
 Install dependencies
