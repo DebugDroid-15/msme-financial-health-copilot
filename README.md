@@ -1,36 +1,270 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MSME Financial Health Copilot
 
-## Getting Started
+> AI-powered financial intelligence platform that helps Micro, Small, and Medium Enterprises (MSMEs) understand their financial health, discover government schemes, and make informed business decisions through an intuitive dashboard.
 
-First, run the development server:
+---
+
+## Problem Statement
+
+Many MSMEs struggle with:
+
+- Understanding their financial performance
+- Assessing loan readiness
+- Discovering relevant government schemes
+- Managing financial documents
+- Tracking business health over time
+- Making data-driven financial decisions
+
+Our solution provides a unified AI-powered platform that simplifies financial analysis and improves funding readiness.
+
+---
+
+# Solution
+
+MSME Financial Health Copilot is a modern web platform that provides:
+
+- Financial Health Dashboard
+- AI Business Insights
+- Executive Reports
+- Government Scheme Recommendations
+- Financial Analytics
+- Smart Notifications
+- Document Management
+- AI Business Assistant
+
+The platform is designed to simplify financial decision-making while improving business readiness for funding and government support.
+
+---
+
+# Features
+
+## Dashboard
+
+- Financial Health Score
+- Revenue & Expense Analytics
+- Cash Flow Monitoring
+- KPI Cards
+- AI Priority Center
+- Loan Eligibility Overview
+- AI Insights
+- Recent Documents
+
+---
+
+## Financial Health
+
+- Executive Financial Summary
+- Revenue Breakdown
+- Expense Analysis
+- Industry Benchmark
+- Liquidity Forecast
+- AI Cost Optimization
+- Strategic Recommendations
+
+---
+
+## Reports
+
+- Executive Business Reports
+- Financial Analysis Reports
+- Business Intelligence
+- Risk Assessment
+- Funding Timeline
+- Forecast Analysis
+- Executive Action Plan
+- Report Library
+
+---
+
+## Government Schemes
+
+- Recommended Schemes
+- Eligibility Analysis
+- Funding Dashboard
+- Success Predictor
+- Scheme Comparison
+- Impact Simulator
+- Success Stories
+
+---
+
+## Document Upload
+
+- Secure Document Upload
+- Processing Pipeline
+- Financial Intelligence
+- Validation Metrics
+- Readiness Score
+- Missing Documents Tracker
+
+---
+
+## AI Business Assistant
+
+- Interactive Business Chat
+- Smart Suggestions
+- Financial Guidance
+- Business Recommendations
+- Quick Actions
+
+---
+
+## Notifications
+
+- Smart Alerts
+- AI Recommendations
+- Timeline View
+- Business Updates
+- Personalized Preferences
+
+---
+
+## Settings
+
+- Business Profile
+- Security
+- Subscription
+- Account Management
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Lucide Icons
+- Recharts
+
+## Backend *(In Progress)*
+
+- FastAPI
+- SQLAlchemy
+- PostgreSQL (Supabase)
+- REST APIs
+
+## Deployment
+
+- Vercel
+- Railway *(Backend - Planned)*
+
+---
+
+# Project Structure
+
+```
+app/
+components/
+backend/
+hooks/
+lib/
+public/
+styles/
+```
+
+---
+
+# Current Status
+
+### Round 1 Submission
+
+- Frontend Completed
+- Responsive UI
+- Multi-page Dashboard
+- Interactive Components
+- Production Build Successful
+
+### Upcoming (Round 2)
+
+- Backend Integration
+- Authentication
+- AI Processing
+- Report Generation
+- Database Integration
+- Document Analysis
+- Government Scheme Matching
+
+---
+
+# Future Enhancements
+
+- AI-powered financial forecasting
+- OCR document extraction
+- Automated financial scoring
+- Personalized funding recommendations
+- Multi-language support
+- Role-based authentication
+- Real-time analytics
+- Exportable executive reports
+
+---
+
+# Team
+
+**Team Name:** YOUR_TEAM_NAME
+
+| Name | Role |
+|------|------|
+| Member 1 | Full Stack Development |
+| Member 2 | Frontend & UI/UX |
+| Member 3 | Backend & AI |
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/msme-financial-health-copilot.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# Demo
 
-To learn more about Next.js, take a look at the following resources:
+**Live Demo**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> Add your Vercel deployment URL here
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# Repository
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> Add your GitHub repository URL here
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# License
+
+This project was developed as part of a Hackathon and is intended for educational and demonstration purposes.
+
+---
+
+## Team
+
+**Team Shatrujeet**
+
+Built with dedication to empower MSMEs through AI-driven financial intelligence and digital innovation.
