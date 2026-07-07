@@ -1,11 +1,18 @@
 import { Card } from "@/components/ui/card";
 import { TrendingUp } from "lucide-react";
 
-export default function HealthScoreCard() {
-  const score = 87;
+interface Props {
+  score: number;
+  risk: string;
+}
 
+export default function HealthScoreCard({
+  score,
+  risk,
+}: Props) {
   return (
     <Card className="rounded-3xl p-6 shadow-sm border">
+
       <h3 className="text-lg font-semibold">
         Financial Health Score
       </h3>
@@ -18,6 +25,7 @@ export default function HealthScoreCard() {
             className="rotate-[-90deg]"
             viewBox="0 0 160 160"
           >
+
             <circle
               cx="80"
               cy="80"
@@ -36,8 +44,11 @@ export default function HealthScoreCard() {
               fill="none"
               strokeLinecap="round"
               strokeDasharray="408"
-              strokeDashoffset={408 - (408 * score) / 100}
+              strokeDashoffset={
+                408 - (408 * score) / 100
+              }
             />
+
           </svg>
 
           <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -64,7 +75,7 @@ export default function HealthScoreCard() {
         />
 
         <p className="text-sm text-emerald-700">
-          Excellent financial health.
+          Current Risk Level: <strong>{risk}</strong>
         </p>
 
       </div>
