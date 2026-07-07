@@ -11,26 +11,16 @@ import {
 
 import { Card } from "@/components/ui/card";
 
-import { DashboardAnalytics } from "@/lib/api/dashboard";
+const data = [
+  { month: "Jan", revenue: 12, expense: 9 },
+  { month: "Feb", revenue: 15, expense: 10 },
+  { month: "Mar", revenue: 18, expense: 12 },
+  { month: "Apr", revenue: 22, expense: 14 },
+  { month: "May", revenue: 20, expense: 15 },
+  { month: "Jun", revenue: 25, expense: 17 },
+];
 
-interface Props {
-  analytics: DashboardAnalytics;
-}
-
-export default function RevenueExpenseChart({
-  analytics,
-}: Props) {
-
-  const chartData = analytics.months.map(
-    (month, index) => ({
-      month,
-      revenue:
-        analytics.revenue[index] / 100000,
-      expense:
-        analytics.expenses[index] / 100000,
-    })
-  );
-
+export default function RevenueExpenseChart() {
   return (
     <Card className="rounded-3xl border bg-white dark:bg-[#1E293B] dark:border-slate-700 p-6 shadow-sm dark:shadow-xl">
 
@@ -43,7 +33,7 @@ export default function RevenueExpenseChart({
           </h2>
 
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            Last 12 Months
+            Last 6 Months
           </p>
 
         </div>
@@ -52,12 +42,9 @@ export default function RevenueExpenseChart({
 
       <div className="h-[300px]">
 
-        <ResponsiveContainer
-          width="100%"
-          height="100%"
-        >
+        <ResponsiveContainer width="100%" height="100%">
 
-          <LineChart data={chartData}>
+          <LineChart data={data}>
 
             <CartesianGrid
               strokeDasharray="4 4"

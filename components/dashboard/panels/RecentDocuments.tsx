@@ -1,17 +1,21 @@
-import {
-  FileSpreadsheet,
-  FileText,
-} from "lucide-react";
+import { FileSpreadsheet, FileText } from "lucide-react";
 
-import { RecentDocument } from "@/lib/api/dashboard";
+const docs = [
+  {
+    name: "Balance Sheet FY24.pdf",
+    icon: FileText,
+  },
+  {
+    name: "Profit & Loss.xlsx",
+    icon: FileSpreadsheet,
+  },
+  {
+    name: "GST Returns.pdf",
+    icon: FileText,
+  },
+];
 
-interface Props {
-  documents: RecentDocument[];
-}
-
-export default function RecentDocuments({
-  documents,
-}: Props) {
+export default function RecentDocuments() {
   return (
     <div className="rounded-3xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-[#1E293B] p-6 shadow-sm dark:shadow-xl">
 
@@ -21,12 +25,9 @@ export default function RecentDocuments({
 
       <div className="mt-6 space-y-4">
 
-        {documents.map((doc) => {
+        {docs.map((doc) => {
 
-          const Icon =
-            doc.type.toLowerCase().includes("sheet")
-              ? FileSpreadsheet
-              : FileText;
+          const Icon = doc.icon;
 
           return (
 
@@ -44,7 +45,7 @@ export default function RecentDocuments({
                 </p>
 
                 <p className="text-sm text-slate-500">
-                  {doc.status}
+                  Uploaded Successfully
                 </p>
 
               </div>

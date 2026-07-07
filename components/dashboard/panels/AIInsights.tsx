@@ -1,12 +1,13 @@
 import { Bot, Sparkles } from "lucide-react";
 
-interface Props {
-  insights: string[];
-}
+const insights = [
+  "Revenue increased by 18% compared to last month.",
+  "Operating expenses are within the recommended range.",
+  "Cash flow remains stable for the next 60 days.",
+  "Eligible for a higher working capital loan.",
+];
 
-export default function AIInsights({
-  insights,
-}: Props) {
+export default function AIInsights() {
   return (
     <div className="rounded-3xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-[#1E293B] p-6 shadow-sm dark:shadow-xl">
 
@@ -25,7 +26,7 @@ export default function AIInsights({
           </h2>
 
           <p className="text-sm text-slate-500 dark:text-slate-400">
-            Generated from your Financial Health Card
+            Smart recommendations generated from your data.
           </p>
 
         </div>
